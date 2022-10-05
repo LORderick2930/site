@@ -2,44 +2,65 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Quitanda Online  :: Principal</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/bootstrap-5.2.1-dist/css/bootstrap.css">
-
-    <title>Omega Tech System</title>
+    <style>
+        p.truncate-3l {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
 </head>
 
-<body style="min-width: 372px;">
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-danger border-bottom  shadow-ms mb-3">
-        <div class="container"> <a class="navbar-brand" href=""><strong>Omega tech System</strong></a>
+<body style="min-width:372px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="">
+                <strong>Quitanda Online</strong>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="navbar-toggler-icon"></span></button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav flex-grow-1">
-                    <li class="navbar-item">
-                        <a href="/quitanda/quemsomos.html" class="nav-link text-white">quem somos</a>
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link text-white">Principal</a>
                     </li>
-                    <li class="navbar-item">
-                        <a href="/quitanda/privacidade.html" class="nav-link text-white">Politica de privacidade </a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="nav-link text-white">cursos</a>
+                    <li class="nav-item">
+                        <a href="/contato.html" class="nav-link text-white">Contato</a>
                     </li>
                 </ul>
-
-
                 <div class="align-self-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/cadastro.html" class="nav-link text-white">quero me cadastrar</a>
+                            <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">LOGIN</a>
+                            <a href="/login.html" class="nav-link text-white">Entrar</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a href="/carrinho.html" class="nav-link text-white">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bi.svg#cart3" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -55,48 +76,54 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active text-center" data-interval="3000">
-                    <img src="/slides/FRUTAS.jpg" alt="" class="img-fluid d-none d-md-block">
-                    <img src="/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
-
+                    <img src="/img/slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="/img/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
                 </div>
                 <div class="carousel-item text-center" data-interval="3000">
-                    <img src="/slides/slide3.jpg" alt="" class="img-fluid d-none d-md-block">
-                    <img src="/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
-
+                    <img src="/img/slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="/img/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
                 </div>
                 <div class="carousel-item text-center" data-interval="3000">
-                    <img src="/slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
-                    <img src="/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
-
+                    <img src="/img/slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="/img/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
                 </div>
-
             </div>
+            <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </a>
         </div>
+        <hr class="mt-3" />
     </header>
 
-    <main class="mb-5 pb-5 mb-md-0">
+    <main>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-5">
-                    <form class="justify-content-center   justify-content-md-start mb-3 mb-md-0">
-                        <div class="input-group  input-group-sm">
-                            <input type="text" class="form-control" placeholder="Buscar produto">
-                            <button class="btn btn-danger"> Buscar</button>
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                            <button class="btn btn-danger">
+                                Buscar
+                            </button>
                         </div>
                     </form>
                 </div>
                 <div class="col-12 col-md-7">
-                    <div class="d-flex  flex-row-reverse  justify-content-center justify-content-md-start">
-                        <form class="ml-3 d-inline-block ">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 d-inline-block">
                             <select class="form-select form-select-sm">
-                                <option> Ordem pelo nome</option>
-                                <option>Ordem pelo preço </option>
-                                <option> ordem pelo desconto</option>
-
+                                <option>Ordernar pelo nome</option>
+                                <option>Ordernar pelo menor preço</option>
+                                <option>Ordernar pelo maior preço</option>
                             </select>
                         </form>
                         <nav class="d-inline-block">
-                            <ul class="pagination pagination-sm  my-0">
+                            <ul class="pagination pagination-sm my-0">
                                 <li class="page-item">
                                     <button class="page-link">1</button>
                                 </li>
@@ -104,7 +131,7 @@
                                     <button class="page-link">2</button>
                                 </li>
                                 <li class="page-item disabled">
-                                    <button class="page-link ">3</button>
+                                    <button class="page-link">3</button>
                                 </li>
                                 <li class="page-item">
                                     <button class="page-link">4</button>
@@ -119,10 +146,9 @@
                         </nav>
                     </div>
                 </div>
-
             </div>
             <hr class="mt-3">
-            <div class="row">
+            <div class="row g-3">
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light">
                         <a href="" class="position-absolute right-0 p-2 text-danger">
@@ -130,221 +156,26 @@
                                 <use xlink:href="/bi.svg#suit-heart" />
                             </svg>
                         </a>
-                        <img src="/produtos/000001.jpg" class="text-img-top">
-                        <div class="card-header "> R$4,50</div>
+                        <img src="/img/produtos/000001.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title"> Banana Prata</h5>
-                            <p class="card-text">Banana prata da melhor qualidade, direto do produtor para o seu
-                                comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000002.jpg" class="text-img-top">
-                        <div class="card-header "> R$3,00</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Abacaxi Perola</h5>
-                            <p class="card-text">Abacaxi da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000003.jpg" class="text-img-top">
-                        <div class="card-header "> R$4,99</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Mamão formosa</h5>
-                            <p class="card-text">Mamão da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000004.jpg" class="text-img-top">
-                        <div class="card-header "> R$6,99</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Maçã</h5>
-                            <p class="card-text">Maçã da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000005.jpg" class="text-img-top">
-                        <div class="card-header "> R$4,39</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Goiaba </h5>
-                            <p class="card-text">Goiaba da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000006.jpg" class="text-img-top">
-                        <div class="card-header "> R$2,50</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Laranja</h5>
-                            <p class="card-text">Laranja da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000007.jpg" class="text-img-top">
-                        <div class="card-header "> R$6,50</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Abacate comum</h5>
-                            <p class="card-text">Abacate da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000008.jpg" class="text-img-top">
-                        <div class="card-header "> R$6,99</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Abacate ouro verde</h5>
-                            <p class="card-text">Abacate da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000009.jpg" class="text-img-top">
-                        <div class="card-header "> R$2,50</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Abobora japonesa</h5>
-                            <p class="card-text">Abobora da melhor qualidade, direto do produtor para o seu comercio</p>
-                        </div>
-                        <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
-                    <div class="card text-center bg-light">
-                        <a href="" class="position-absolute right-0 p-2 text-danger">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#suit-heart" />
-                            </svg>
-                        </a>
-                        <img src="/produtos/000010.jpg" class="text-img-top">
-                        <div class="card-header "> R$2,99</div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Abobrinha italiana</h5>
-                            <p class="card-text">abobrinha da melhor qualidade, direto do produtor para o seu comercio
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
                             </p>
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
                             </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
+                            <small class="text-success">320,5kg em estoque</small>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light">
                         <a href="" class="position-absolute right-0 p-2 text-danger">
@@ -352,21 +183,26 @@
                                 <use xlink:href="/bi.svg#suit-heart" />
                             </svg>
                         </a>
-                        <img src="/produtos/000011.jpg" class="text-img-top">
-                        <div class="card-header "> R$1,50</div>
+                        <img src="/img/produtos/000002.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title"> Alface</h5>
-                            <p class="card-text">ALface da melhor qualidade, direto do produtor para o seu comercio</p>
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
                             </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
+                            <small class="text-success">320,5kg em estoque</small>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light">
                         <a href="" class="position-absolute right-0 p-2 text-danger">
@@ -374,38 +210,283 @@
                                 <use xlink:href="/bi.svg#suit-heart" />
                             </svg>
                         </a>
-                        <img src="/produtos/000012.jpg" class="text-img-top">
-                        <div class="card-header "> R$18,99</div>
+                        <img src="/img/produtos/000003.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title"> Alho</h5>
-                            <p class="card-text">Alho da melhor qualidade, direto do produtor para o seu comercio</p>
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
                         </div>
                         <div class="card-footer">
-                            <form class="d-block">
-                                <button class="btn btn-danger"> Adicionar ao seu carrinho </button>
-                            </form>
-                            <small class="text-success"> 1 tonelada disponivel </small>
+                            <div>
+                                <button class="btn btn-light disabled" disabled>
+                                    <small>Reabastecendo Estoque</small>
+                                </button>
+                            </div>
+                            <small class="text-danger"><b>Produto Esgotado</b></small>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart-fill" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000004.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000005.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000006.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000007.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000008.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart-fill" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000009.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000010.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000011.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/img/produtos/000012.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4,50
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr class="mt-3">
-            <div class="row pb-4">
+            <div class="row pb-3">
                 <div class="col-12">
-
-
-                    <div class="d-flex  flex-row-reverse  justify-content-center justify-content-md-start">
-                        <form class="ml-3 d-inline-block ">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 d-inline-block">
                             <select class="form-select form-select-sm">
-                                <option> Ordem pelo nome</option>
-                                <option>Ordem pelo preço </option>
-                                <option> ordem pelo desconto</option>
-
+                                <option>Ordernar pelo nome</option>
+                                <option>Ordernar pelo menor preço</option>
+                                <option>Ordernar pelo maior preço</option>
                             </select>
                         </form>
                         <nav class="d-inline-block">
-                            <ul class="pagination pagination-sm  my-0">
+                            <ul class="pagination pagination-sm my-0">
                                 <li class="page-item">
                                     <button class="page-link">1</button>
                                 </li>
@@ -413,7 +494,7 @@
                                     <button class="page-link">2</button>
                                 </li>
                                 <li class="page-item disabled">
-                                    <button class="page-link ">3</button>
+                                    <button class="page-link">3</button>
                                 </li>
                                 <li class="page-item">
                                     <button class="page-link">4</button>
@@ -428,35 +509,39 @@
                         </nav>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </main>
 
+    <div style="height: 273px;" class="d-block d-md-none"></div>
+    <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+    <div style="height: 129px;" class="d-none d-lg-block"></div>
+    
     <footer class="border-top fixed-bottom text-muted bg-light">
         <div class="container">
             <div class="row py-3">
-                <div class="col-12 col-md-4 text-center  text-md-left">
-                    &copy; 2022 - Omega Tech System <br>
-                    contato:(21)00000-0000
-                    Rio de janeiro 
-                    email:omegatechsystem@gmail.com
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    &copy; 2020 - Quitanda Online Ltda ME<br>
+                    Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                    CPNJ 99.999.999/0001-99
                 </div>
-                
-                <div class="col-12 col-md-4 text-center  ">
-                    <a href="/quitanda/privacidade.html" class="text-decoration-none text-dark"> politica de privacidade</a>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a><br>
+                    <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a><br>
+                    <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a><br>
+                    <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
                 </div>
-                <div class="col-12 col-md-4 text-center  text-md-right">
-                    <a href="/quitanda/termos.html" class="text-decoration-none text-dark"> Termos de uso</a>
+                <div class="col-12 col-md-4 text-center text-md-right">
+                    <a href="/contato.html" class="text-decoration-none text-dark">Contato pelo site</a><br>
+                    E-mail: <a href="mailto:email@dominio.com"
+                        class="text-decoration-none text-dark">email@dominio.com</a><br>
+                    Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">(28) 99999-0000</a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
 
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
